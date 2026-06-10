@@ -192,7 +192,7 @@ const T = {
     // footer
     'footer.disclaimer': '重要声明：本网站仅向安大略省及不列颠哥伦比亚省居民提供保险咨询服务。',
     'footer.adv.h3': '联系我们',
-    'footer.adv.p':  '我们将以专业、诚信的态度为您提供最优的保障方案。',
+    'footer.adv.p':  '我们将以专业诚信的态度为您提供最优的保障方案。',
     'footer.wechat': '微信 WeChat',
     'footer.qr.ph':  '微信二维码',
     'footer.qr.tip': '请将微信二维码图片命名为 wechat-qr.png 放置于网站根目录',
