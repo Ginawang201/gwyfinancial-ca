@@ -261,7 +261,7 @@ const T = {
     'gif.compare.title':  '保本基金与互惠基金的区别',
     'gif.col.item':       '项目', 'gif.col.gif': '保本基金', 'gif.col.mf': '互惠基金',
     'gif.row1':  '专业投资管理', 'gif.row2': '市场增长潜力', 'gif.row3': '本金保障',
-    'gif.row4':  '身故本金保障', 'gif.row5': '指定受益人',   'gif.row6': '遗产认证豁免',
+    'gif.row4':  '身故本金保障', 'gif.row5': '指定受益人',   'gif.row6': '免遗产认证',
     'gif.row7':  '债权人保护',   'gif.row7.gif': '可能适用',
     'gif.row8':  '管理费用',     'gif.row8.gif': '较高',      'gif.row8.mf': '较低',
     'gif.benefits.title': '保本基金的主要优势',
