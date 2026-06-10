@@ -590,7 +590,7 @@ input:focus, select:focus, textarea:focus {
 .gif-table th { background: var(--navy); color: var(--white); padding: 9px 12px; text-align: left; font-weight: 600; }
 .gif-table th:not(:first-child) { text-align: center; }
 .gif-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--text); }
-.gif-table td:not(:first-child) { text-align: center; font-size: 15px; }
+.gif-table td:not(:first-child) { text-align: center; font-size: 15px; white-space: nowrap; }
 .gif-table tr:nth-child(even) td { background: var(--cream); }
 .gif-table tr:last-child td { border-bottom: none; }
 
