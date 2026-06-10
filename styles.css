@@ -586,11 +586,13 @@ input:focus, select:focus, textarea:focus {
 .modal-details .faq-list p { font-size: 13px; color: var(--text-mid); line-height: 1.7; padding: 0 0 10px 10px; }
 
 /* ========== GIF TABLE & BENEFITS ========== */
-.gif-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
-.gif-table th { background: var(--navy); color: var(--white); padding: 9px 12px; text-align: left; font-weight: 600; }
-.gif-table th:not(:first-child) { text-align: center; }
-.gif-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--text); }
-.gif-table td:not(:first-child) { text-align: center; font-size: 15px; white-space: nowrap; }
+.gif-table { width: 100%; border-collapse: collapse; font-size: 13.5px; table-layout: fixed; }
+.gif-table th { background: var(--navy); color: var(--white); padding: 9px 8px; text-align: left; font-weight: 600; }
+.gif-table th:first-child { width: 42%; }
+.gif-table th:nth-child(2) { width: 33%; text-align: center; }
+.gif-table th:nth-child(3) { width: 25%; text-align: center; }
+.gif-table td { padding: 8px 8px; border-bottom: 1px solid var(--border); color: var(--text); word-break: keep-all; }
+.gif-table td:not(:first-child) { text-align: center; font-size: 14px; white-space: nowrap; }
 .gif-table tr:nth-child(even) td { background: var(--cream); }
 .gif-table tr:last-child td { border-bottom: none; }
 
