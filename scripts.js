@@ -345,7 +345,7 @@ const T = {
     'nav.travel':  'Travel Insurance',
     'nav.student': 'Student Insurance',
     'nav.life':    'Life & CI',
-    'nav.gif':     'GIF / Seg Funds',
+    'nav.gif':     'Segregated Funds',
     'nav.contact': 'Contact Us',
 
     'hero.tag':  'Licensed in Ontario & British Columbia | 安省 & BC省持牌顾问',
