@@ -77,6 +77,7 @@ a.btn, a.btn:visited, a.btn:active, a.btn:focus { outline: none; box-shadow: non
   font-size: 14px; font-weight: 500; transition: all 0.2s; white-space: nowrap;
 }
 .main-nav a:hover { background: rgba(255,255,255,0.12); color: #fff; }
+.main-nav a.active { background: var(--gold); color: var(--navy); font-weight: 700; }
 
 .nav-toggle { display: none; background: none; border: none; font-size: 22px; cursor: pointer; color: #fff; }
 
@@ -390,6 +391,157 @@ input:focus, select:focus, textarea:focus {
 .product-tile:hover .tile-cta {
   background: var(--gold);
   color: var(--white);
+}
+
+/* ========== ABOUT / 个人介绍 ========== */
+.about-section { background: var(--white); }
+.about-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 44px;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto 56px;
+}
+.about-photo {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+.about-photo-ph { display: none; }
+.about-photo.no-photo {
+  border: 2px dashed var(--border);
+  box-shadow: none;
+}
+.about-photo.no-photo .about-photo-ph {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.8;
+}
+.about-eyebrow {
+  display: inline-block;
+  font-size: 13px; font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+.about-bio h2 { font-size: 26px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.about-title { font-size: 14.5px; font-weight: 600; color: var(--text-mid); margin-bottom: 12px; }
+.about-creds { list-style: none; padding: 0; margin: 0 0 18px; }
+.about-creds li {
+  font-size: 13.5px; color: var(--text); line-height: 1.5;
+  padding: 2px 0;
+}
+.about-creds li strong { color: var(--gold); font-weight: 700; margin-right: 4px; }
+.about-bio p { font-size: 14.5px; color: var(--text); line-height: 1.85; margin-bottom: 14px; }
+.about-slogan {
+  font-size: 17px !important; font-weight: 700;
+  color: var(--navy) !important;
+  letter-spacing: 1px;
+  margin: 18px 0 22px !important;
+}
+.about-bio .btn { display: inline-block; cursor: pointer; }
+.about-reveal { display: none; margin-top: 18px; }
+.about-reveal.show { display: block; }
+.about-phone {
+  display: inline-block; font-size: 19px; font-weight: 700;
+  color: var(--navy); margin-bottom: 14px;
+}
+.about-phone:hover { color: var(--gold); }
+.about-wechat { text-align: center; width: 150px; }
+.about-wechat img {
+  width: 150px; height: 150px; display: block;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: #fff; padding: 6px;
+}
+.about-wechat span {
+  display: block; font-size: 13px; color: var(--text-mid); margin-top: 8px;
+}
+@media (max-width: 760px) {
+  .about-wechat { margin-left: auto; margin-right: auto; }
+}
+
+/* Articles */
+.about-articles { max-width: 1040px; margin: 0 auto; text-align: center; }
+.about-articles h3 { font-size: 24px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+.about-articles .section-sub { color: var(--text-mid); font-size: 15px; margin-bottom: 32px; }
+.article-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: left;
+}
+.article-tile {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 24px 22px;
+  cursor: pointer;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: all 0.22s;
+}
+.article-tile:hover {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+.article-tag {
+  display: inline-block;
+  font-size: 12px; font-weight: 600;
+  color: var(--gold);
+  background: var(--cream);
+  border-radius: 14px;
+  padding: 3px 12px;
+  margin-bottom: 14px;
+}
+.article-tile h4 { font-size: 16.5px; font-weight: 700; color: var(--navy); margin-bottom: 10px; line-height: 1.4; }
+.article-tile p { font-size: 13.5px; color: var(--text-mid); line-height: 1.65; margin-bottom: 16px; }
+
+.article-body { padding-top: 4px; }
+.article-body .article-lead {
+  font-size: 15.5px; color: var(--text); line-height: 1.85;
+  background: var(--cream); border-left: 3px solid var(--gold);
+  border-radius: 8px; padding: 14px 16px; margin-bottom: 20px;
+}
+.article-body h4 {
+  font-size: 16.5px; font-weight: 700; color: var(--navy);
+  margin: 24px 0 10px;
+}
+.article-body p { font-size: 14.5px; color: var(--text); line-height: 1.85; margin-bottom: 12px; }
+.article-body ul { margin: 0 0 14px; padding-left: 0; list-style: none; }
+.article-body li {
+  font-size: 14.5px; color: var(--text); line-height: 1.7;
+  padding-left: 20px; position: relative; margin-bottom: 7px;
+}
+.article-body li::before {
+  content: ""; position: absolute; left: 4px; top: 10px;
+  width: 5px; height: 5px; border-radius: 50%; background: var(--gold);
+}
+.article-body strong { color: var(--navy); font-weight: 700; }
+.article-body .article-disclaimer {
+  font-size: 12.5px; color: var(--text-mid); line-height: 1.7;
+  border-top: 1px solid var(--border); margin-top: 22px; padding-top: 14px;
+}
+
+@media (max-width: 760px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 26px;
+  }
+  .about-bio { text-align: center; }
+  .article-cards-grid { grid-template-columns: 1fr; }
 }
 
 /* ========== MODAL OVERLAY & CONTAINER ========== */
