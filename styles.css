@@ -109,25 +109,6 @@ a.btn, a.btn:visited, a.btn:active, a.btn:focus { outline: none; box-shadow: non
   white-space: nowrap;
 }
 .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-.hero-contact {
-  display: flex; align-items: center; justify-content: center; gap: 22px;
-  flex-wrap: wrap; margin-top: 26px;
-}
-.hero-call {
-  display: flex; flex-direction: column; align-items: center;
-  background: var(--white); border: 1.5px solid var(--gold);
-  border-radius: var(--radius); padding: 14px 30px; text-decoration: none;
-  box-shadow: var(--shadow); transition: box-shadow .2s, border-color .2s;
-}
-.hero-call:hover { box-shadow: var(--shadow-hover); border-color: var(--gold-light); }
-.hero-call-label { font-size: 14px; color: var(--text-mid); margin-bottom: 3px; }
-.hero-call-num { font-size: clamp(22px, 4vw, 30px); font-weight: 700; color: var(--gold); letter-spacing: 1px; }
-.hero-qr { display: flex; flex-direction: column; align-items: center; gap: 6px; }
-.hero-qr img {
-  width: 96px; height: 96px; border-radius: var(--radius-sm);
-  border: 1px solid var(--border); background: var(--white); padding: 4px;
-}
-.hero-qr-cap { font-size: 12px; color: var(--text-mid); }
 
 /* ========== COMPLIANCE BANNER ========== */
 .compliance-banner {
