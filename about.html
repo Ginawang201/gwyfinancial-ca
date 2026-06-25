@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我 | GWY Financial Inc</title>
+  <meta name="description" content="嘉程财富 GWY Financial Inc 创始人 Gina Wang —— 为华人移民家庭提供保险理财、保本基金、税务规划、退休金规划与资产传承的一站式服务。" />
+  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-gwy">GWY</span><span class="logo-fin"> Financial</span>
+    </a>
+    <button class="nav-toggle" aria-label="菜单" onclick="toggleNav()">&#9776;</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="about.html" class="active" data-i18n="nav.about">关于我</a>
+      <a href="index.html#modal-travel"  data-i18n="nav.outbound">出境旅游保险</a>
+      <a href="index.html#modal-inbound" data-i18n="nav.inbound">入境访客保险 / Super Visa</a>
+      <a href="index.html#modal-student" data-i18n="nav.student">留学生保险</a>
+      <a href="index.html#modal-life"    data-i18n="nav.life">寿险 &amp; 重疾险</a>
+      <a href="index.html#modal-gif"     data-i18n="nav.gif">保本基金投资</a>
+      <a href="#contact-footer" data-i18n="nav.contact">联系我们</a>
+    </nav>
+    <div class="lang-toggle">
+      <button id="btn-zh" class="lang-btn active" onclick="setLang('zh')">中文</button>
+      <span class="lang-sep">|</span>
+      <button id="btn-en" class="lang-btn"        onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</header>
+
+<!-- ========== ABOUT / 个人介绍 ========== -->
+<section class="section about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photo no-photo">
+        <img src="advisor-photo.jpg" alt="顾问照片"
+             onload="this.parentNode.classList.remove('no-photo')"
+             onerror="this.remove()" />
+        <span class="about-photo-ph" data-i18n="about.photo.ph">在此放置您的照片<br/>advisor-photo.jpg</span>
+      </div>
+      <div class="about-bio">
+        <span class="about-eyebrow" data-i18n="about.eyebrow">关于我 · About</span>
+        <h2 data-i18n="about.name">Gina Wang · 王晔</h2>
+        <p class="about-title" data-i18n="about.title">嘉程财富创始人</p>
+        <ul class="about-creds">
+          <li data-i18n="about.cred1"><strong>CLU</strong> 特许财富传承规划师</li>
+          <li data-i18n="about.cred2"><strong>CHS</strong> 注册健康保险专家</li>
+          <li data-i18n="about.cred3"><strong>MDRT</strong> 环球百万圆桌终身会员</li>
+        </ul>
+        <p data-i18n="about.p1">在加拿大金融保险业深耕20多年，专注为华人移民家庭提供保险、保本基金、税务规划、退休金规划与资产传承的一站式解决方案。</p>
+        <p data-i18n="about.p2">我深知，远渡重洋来到这里的每一个家庭，辛苦攒下的不只是财富，更是给下一代的底气。我的工作，是以专业为基石，以真诚为纽带，帮助您实现人生各阶段的财务目标，为您和家人的未来构建更稳健、更安心的财富保障。</p>
+        <p class="about-slogan" data-i18n="about.slogan">稳健守富 · 智慧传家</p>
+        <div class="about-contact">
+          <button type="button" class="btn btn-primary" data-i18n="about.cta" onclick="document.getElementById('aboutReveal').classList.toggle('show')">预约一对一咨询 →</button>
+          <div class="about-reveal" id="aboutReveal">
+            <a href="tel:6479881519" class="about-phone">📞 647-988-1519</a>
+            <div class="about-wechat">
+              <img src="wechat-qr.png" alt="微信二维码" />
+              <span data-i18n="about.wechat">微信扫码联系</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-articles">
+      <h3 data-i18n="about.articles.h">专业文章 · Insights</h3>
+      <p class="section-sub" data-i18n="about.articles.sub">用通俗的语言，聊聊理财、税务与传承里那些真正影响你家庭的事。</p>
+      <div class="article-cards-grid">
+
+        <div class="article-tile" onclick="openModal('modal-art1')">
+          <div class="article-tag" data-i18n="about.art1.tag">退休规划</div>
+          <h4 data-i18n="about.art1.t">退休规划的三大误区</h4>
+          <p data-i18n="about.art1.p">很多人临到退休才发现钱不够用——问题往往出在这三个常见误区。</p>
+          <span class="tile-cta" data-i18n="about.art.cta">阅读全文 →</span>
+        </div>
+
+        <div class="article-tile" onclick="openModal('modal-art2')">
+          <div class="article-tag" data-i18n="about.art2.tag">税务规划</div>
+          <h4 data-i18n="about.art2.t">新移民必读：落地加拿大的税务规划</h4>
+          <p data-i18n="about.art2.p">报税身份、登陆日资产、海外申报、TFSA/RRSP——第一步走对很重要。</p>
+          <span class="tile-cta" data-i18n="about.art.cta">阅读全文 →</span>
+        </div>
+
+        <div class="article-tile" onclick="openModal('modal-art3')">
+          <div class="article-tag" data-i18n="about.art3.tag">企业主</div>
+          <h4 data-i18n="about.art3.t">为什么要买公司保单？</h4>
+          <p data-i18n="about.art3.p">用公司的钱买保险，省税、免税增长、免税传承——企业主的高效资产工具。</p>
+          <span class="tile-cta" data-i18n="about.art.cta">阅读全文 →</span>
+        </div>
+
+        <div class="article-tile" onclick="openModal('modal-art4')">
+          <div class="article-tag" data-i18n="about.art4.tag">财富杠杆</div>
+          <h4 data-i18n="about.art4.t">IFA：高收入高净值家庭的避税利器</h4>
+          <p data-i18n="about.art4.p">用一张保单撬动银行融资，保留现金流，同时享免税增长与传承。</p>
+          <span class="tile-cta" data-i18n="about.art.cta">阅读全文 →</span>
+        </div>
+
+        <div class="article-tile" onclick="openModal('modal-art5')">
+          <div class="article-tag" data-i18n="about.art5.tag">重疾保障</div>
+          <h4 data-i18n="about.art5.t">加拿大有免费医疗，还需要买重疾险吗？</h4>
+          <p data-i18n="about.art5.p">公费医疗能治病，却补不了收入中断和家庭开支——这正是重疾险的价值。</p>
+          <span class="tile-cta" data-i18n="about.art.cta">阅读全文 →</span>
+        </div>
+
+        <div class="article-tile" onclick="openModal('modal-art6')">
+          <div class="article-tag" data-i18n="about.art6.tag">资本利得</div>
+          <h4 data-i18n="about.art6.t">LCGE 终身资本利得免税额，我能用上吗？</h4>
+          <p data-i18n="about.art6.p">卖掉公司可能有上百万的免税额——但你的公司“合格”吗？</p>
+          <span class="tile-cta" data-i18n="about.art.cta">阅读全文 →</span>
+        </div>
+
+        <div class="article-tile" onclick="openModal('modal-art7')">
+          <div class="article-tag" data-i18n="about.art7.tag">家庭保障</div>
+          <h4 data-i18n="about.art7.t">每天一杯咖啡钱，给家人最大的保障</h4>
+          <p data-i18n="about.art7.p">定期寿险用最少的保费，撑起家庭最实在的安全网。</p>
+          <span class="tile-cta" data-i18n="about.art.cta">阅读全文 →</span>
+        </div>
+
+        <div class="article-tile" onclick="openModal('modal-art8')">
+          <div class="article-tag" data-i18n="about.art8.tag">子女规划</div>
+          <h4 data-i18n="about.art8.t">给子女买保险，还是 RESP？</h4>
+          <p data-i18n="about.art8.p">政府补贴 vs 灵活终身——两个工具目标不同，其实可以兼顾。</p>
+          <span class="tile-cta" data-i18n="about.art.cta">阅读全文 →</span>
+        </div>
+
+        <div class="article-tile" onclick="openModal('modal-art9')">
+          <div class="article-tag" data-i18n="about.art9.tag">房产税务</div>
+          <h4 data-i18n="about.art9.t">多套房投资的税务隐患</h4>
+          <p data-i18n="about.art9.p">自住房免税只有一套、折旧回收、反炒房规则……多套房别忽视这些税。</p>
+          <span class="tile-cta" data-i18n="about.art.cta">阅读全文 →</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer" id="contact-footer">
+  <div class="container footer-inner">
+    <div class="footer-advisor">
+      <h3 data-i18n="footer.adv.h3">请联系您的顾问 | Contact Your Advisor</h3>
+      <p data-i18n="footer.adv.p">我们将以专业诚信的态度，为您提供最优的保障方案。</p>
+    </div>
+    <p class="footer-disclaimer-highlight" data-i18n="footer.disclaimer">重要声明：本网站仅向安大略省及不列颠哥伦比亚省居民提供保险咨询服务。</p>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="qr-row">
+          <div class="qr-item">
+            <h4 data-i18n="footer.wechat">微信 WeChat</h4>
+            <img src="wechat-qr.png" alt="微信二维码" class="qr-img" />
+          </div>
+          <div class="qr-item">
+            <h4>公众号</h4>
+            <img src="official-qr.png" alt="公众号二维码" class="qr-img" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.ct.h4">联系方式</h4>
+        <p>📞 <a href="tel:6479881519">647-988-1519</a></p>
+        <p>📍 201-1670 North Service Road East, Oakville, ON L6H 7G3</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.nav.h4">快速导航</h4>
+        <p><a href="index.html#modal-travel"  data-i18n="nav.outbound">出境旅游保险</a></p>
+        <p><a href="index.html#modal-inbound" data-i18n="nav.inbound">入境访客保险 / Super Visa</a></p>
+        <p><a href="index.html#modal-student" data-i18n="nav.student">留学生保险</a></p>
+        <p><a href="index.html#modal-life"    data-i18n="nav.life">寿险 &amp; 重疾险</a></p>
+        <p><a href="index.html#modal-gif"     data-i18n="tile.gif.h">保本基金投资</a></p>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p data-i18n="footer.legal"></p>
+      <p style="margin-top:14px;font-size:12px;opacity:.5" data-i18n="footer.copy">© 2024 GWY Financial Inc. 保留所有权利。</p>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL OVERLAY -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+
+<!-- ── ARTICLE MODALS ── -->
+<div class="modal" id="modal-art1" role="dialog" aria-modal="true">
+  <div class="modal-header">
+    <h2 data-i18n="about.art1.t">退休规划的三大误区</h2>
+    <button class="modal-close" onclick="closeModal()" aria-label="关闭">✕</button>
+  </div>
+  <div class="modal-body article-body">
+    <p class="article-lead">退休规划，不是退休前才该做的事。下面这三个误区，几乎每个家庭都踩过——越早避开，退休生活越从容。</p>
+
+    <h4>误区一：靠政府福利就够养老</h4>
+    <p>很多人以为有 CPP（养老金）和 OAS（老年金）就能安心退休。事实上，这两项加起来通常只能替代退休前收入的 <strong>30%–40%</strong>，远不足以维持原有的生活水平。</p>
+    <p>更要注意 OAS 的“回拨”（Clawback）：当你的退休净收入超过约 $90,000，OAS 就会被逐步扣减，收入越高，能拿到的越少。</p>
+
+    <h4>误区二：RRSP 存得越多越好</h4>
+    <p>RRSP 是“延税”，不是“免税”。供款时能减税，但退休提取时 <strong>100% 计为收入</strong>，可能把你推到更高税阶，甚至触发 OAS 回拨。</p>
+    <ul>
+      <li>聪明的做法是 <strong>RRSP / TFSA / 非注册账户</strong> 三者搭配；</li>
+      <li>让未来的提取在不同税务“口袋”之间灵活调配，整体税负更低。</li>
+    </ul>
+
+    <h4>误区三：退休了就该把钱全放进 GIC / 现金</h4>
+    <p>退休后你可能还要再花 25–30 年，通胀会持续侵蚀购买力。完全保守反而带来“长寿风险”——钱比人先花完。适度的稳健增长，依然必要。</p>
+
+    <h4>解决方案：两个免税退休金工具</h4>
+    <p>避开误区之后，这两个工具特别适合用来打造退休后的“免税现金流”：</p>
+    <ul>
+      <li><strong>TFSA（免税储蓄账户）</strong>：账户内投资的增长与取款<strong>全程免税</strong>；退休后提取不计为应税收入，既不会推高税阶，也不触发 OAS 回拨——是退休现金流里最灵活的“免税口袋”。</li>
+      <li><strong>分红储蓄保险（参与型分红保险）</strong>：保单现金价值长期<strong>免税复利</strong>增长；退休后可通过保单贷款 / 提取，获得稳定的“免税”补充收入，而不增加应税收入；同时还附带终身寿险保障与财富传承功能，一举多得。</li>
+    </ul>
+    <p>一句话：想退休后“少缴税、多到手”，<strong>TFSA</strong> 与<strong>分红储蓄保险</strong>是打造免税退休金的两大利器。</p>
+
+    <p class="article-disclaimer">※ 本文仅作一般信息参考，不构成具体的税务、法律或投资建议。请结合自身情况咨询专业顾问。</p>
+  </div>
+</div>
+
+<div class="modal" id="modal-art2" role="dialog" aria-modal="true">
+  <div class="modal-header">
+    <h2 data-i18n="about.art2.t">新移民必读：落地加拿大的税务规划</h2>
+    <button class="modal-close" onclick="closeModal()" aria-label="关闭">✕</button>
+  </div>
+  <div class="modal-body article-body">
+    <p class="article-lead">从登陆加拿大那一刻起，你就可能成为“全球征税”的税务居民。落地前后做对几件事，能为未来省下一大笔税。</p>
+
+    <h4>1. 你是“税务居民”吗？</h4>
+    <p>加拿大对税务居民按<strong>全球收入</strong>征税——全世界的收入都要申报。判断依据是“居住联系”（住所、配偶子女、经济社会联系），而不只是身份或停留天数。</p>
+
+    <h4>2. 登陆日的“视同购买”——最容易被忽略的省税点</h4>
+    <p>成为税务居民当天，你的海外资产被<strong>“视同按当日公允市值买入”</strong>。也就是说，登陆<strong>之前</strong>的增值，加拿大不征税。</p>
+    <ul>
+      <li>务必保留登陆日各项资产（房产、股票等）的市值证明；</li>
+      <li>将来出售时以此为成本基准，避免把登陆前的增值也算进来多缴税。</li>
+    </ul>
+
+    <h4>3. 海外资产申报 T1135</h4>
+    <p>海外资产成本合计超过 <strong>CAD $100,000</strong>，每年须随报税申报 T1135 表。漏报罚款很重，别忽视。</p>
+
+    <h4>4. 用足免税 / 延税账户</h4>
+    <ul>
+      <li><strong>TFSA</strong>：增长与取款全免税；</li>
+      <li><strong>RRSP</strong>：供款减税、延税增长；</li>
+      <li><strong>FHSA</strong>：首次购房，减税又免税；</li>
+      <li><strong>RESP</strong>：子女教育，政府还有补贴。</li>
+    </ul>
+
+    <h4>5. 第一年就报税</h4>
+    <p>即使第一年没有收入，也建议报税：可激活 GST/HST 退税、子女福利（CCB）等。</p>
+
+    <p class="article-disclaimer">※ 本文仅作一般信息参考，不构成具体的税务、法律或投资建议。请结合自身情况咨询专业顾问。</p>
+  </div>
+</div>
+
+<div class="modal" id="modal-art3" role="dialog" aria-modal="true">
+  <div class="modal-header">
+    <h2 data-i18n="about.art3.t">为什么要买公司保单？</h2>
+    <button class="modal-close" onclick="closeModal()" aria-label="关闭">✕</button>
+  </div>
+  <div class="modal-body article-body">
+    <p class="article-lead">对企业主来说，“用公司买还是用个人买保险”，是一个常被忽略、却能差出很多税的决定。把人寿保险放进公司，往往是更高效的选择。</p>
+
+    <h4>1. 用“更便宜”的钱缴保费</h4>
+    <p>公司利润的税率通常低于个人最高税率。用公司的钱缴保费，等于用<strong>成本更低的资金</strong>买同一份保障；若先把钱分红到个人再买，得先缴一道个人所得税。</p>
+
+    <h4>2. 保单内免税增长，还不挤占小企业低税率</h4>
+    <ul>
+      <li>永久寿险保单内的现金价值<strong>免税复利</strong>增长；</li>
+      <li>公司里普通投资的被动收入过高（超过 $50,000/年）会侵蚀小企业低税率额度（SBD）；</li>
+      <li>而保险内的增长<strong>不计入</strong>这块，帮你守住公司的低税率。</li>
+    </ul>
+
+    <h4>3. 身故赔付经 CDA 免税传承</h4>
+    <p>公司收到的身故赔付，扣除保单成本基础（ACB）后的部分会进入<strong>资本股息账户（CDA）</strong>，可作为资本股息<strong>免税</strong>派发给股东或继承人——让公司里“被困住”的财富，以免税方式传给下一代。</p>
+
+    <h4>4. 它还能解决这些问题</h4>
+    <ul>
+      <li><strong>关键人保障</strong>：核心股东 / 高管身故，赔付帮公司渡过过渡期；</li>
+      <li><strong>股东买断协议（Buy-Sell）</strong>：合伙人一方身故，用赔付收购其股份，避免家族与公司纠纷；</li>
+      <li><strong>流动性</strong>：用保单现金价值做抵押贷款（如 IFA），保留资金继续投资或经营。</li>
+    </ul>
+
+    <h4>适合谁？</h4>
+    <ul>
+      <li>有盈利、且短期用不到全部利润的公司；</li>
+      <li>希望税务高效地积累与传承财富的股东；</li>
+      <li>有合伙人、需要安排股权传承的企业。</li>
+    </ul>
+
+    <p>一句话：公司保单不只是“保障”，更是企业主<strong>省税、增值、传承</strong>三合一的财务工具。</p>
+
+    <p class="article-disclaimer">※ 本文仅作一般信息参考，不构成具体的税务、法律或投资建议。请结合自身情况咨询专业顾问。</p>
+  </div>
+</div>
+
+<div class="modal" id="modal-art4" role="dialog" aria-modal="true">
+  <div class="modal-header">
+    <h2 data-i18n="about.art4.t">IFA：高收入高净值家庭的避税利器</h2>
+    <button class="modal-close" onclick="closeModal()" aria-label="关闭">✕</button>
+  </div>
+  <div class="modal-body article-body">
+    <p class="article-lead">IFA（Immediate Financing Arrangement，即时融资安排）在高收入、高净值人群中越来越受欢迎——用<strong>一张永久寿险</strong>，同时实现保障、免税增长、税务优化与现金流保留。</p>
+
+    <h4>它是怎么运作的？</h4>
+    <ul>
+      <li>购买一份永久型（分红）人寿保险，缴入较大保费；</li>
+      <li>以保单的现金价值作抵押，向银行<strong>贷款</strong>，把大部分资金“拿回来”继续投资或投入生意；</li>
+      <li>保单内的现金价值持续<strong>免税复利</strong>增长；</li>
+      <li>若贷款用于赚取收入，贷款利息（有时还有部分保费成本）可能<strong>税前抵扣</strong>；</li>
+      <li>身故时，赔付先偿还贷款，剩余部分（公司持有时）通过 CDA 免税传承给家人。</li>
+    </ul>
+
+    <h4>适合谁？</h4>
+    <ul>
+      <li>持续高收入、现金流稳定；</li>
+      <li>名下或公司有可投资的资金需求；</li>
+      <li>能理解并承受杠杆与利率波动。</li>
+    </ul>
+
+    <h4>要注意什么？</h4>
+    <p>这是<strong>杠杆策略</strong>，受利率与保单表现影响，必须由专业团队（顾问 + 会计师）共同设计并持续跟踪。</p>
+
+    <p>一句话：IFA 不是“避税魔法”，而是把<strong>保险、信贷、投资</strong>三者结合的高级现金流与税务工具。</p>
+
+    <p class="article-disclaimer">※ 本文仅作一般信息参考，不构成具体的税务、法律或投资建议。请结合自身情况咨询专业顾问。</p>
+  </div>
+</div>
+
+<div class="modal" id="modal-art5" role="dialog" aria-modal="true">
+  <div class="modal-header">
+    <h2 data-i18n="about.art5.t">加拿大有免费医疗，还需要买重疾险吗？</h2>
+    <button class="modal-close" onclick="closeModal()" aria-label="关闭">✕</button>
+  </div>
+  <div class="modal-body article-body">
+    <p class="article-lead">很多新移民觉得“加拿大看病免费，重疾险没必要”。但公费医疗治的是“病”，补不了“病带来的经济损失”。</p>
+
+    <h4>公费医疗不覆盖什么？</h4>
+    <ul>
+      <li>患病期间无法工作的<strong>收入损失</strong>；</li>
+      <li>房贷、车贷、孩子学费等照常要还的开支；</li>
+      <li>部分自费药物、私立康复 / 护理、海外就医、第二医疗意见；</li>
+      <li>家人为照顾你而停工的损失。</li>
+    </ul>
+
+    <h4>重疾险补的正是这一块</h4>
+    <ul>
+      <li>一旦确诊合同约定的重大疾病（癌症、心梗、中风等），<strong>一次性赔付一笔免税现金</strong>；</li>
+      <li>这笔钱用途完全自由——补收入、还贷款、请护工、出国治疗都行；</li>
+      <li>让你能安心养病，而不是一边治病一边为钱发愁。</li>
+    </ul>
+
+    <h4>一个简单的算法</h4>
+    <p>假设家庭月开支 $8,000，一场大病康复期 2 年，仅生活开支就约 <strong>$192,000</strong>——这还没算收入中断的部分。</p>
+
+    <p>一句话：公费医疗保你“<strong>治得起病</strong>”，重疾险保你“<strong>病得起</strong>”。两者不是替代，而是互补。</p>
+
+    <p class="article-disclaimer">※ 本文仅作一般信息参考，不构成具体的税务、法律或投资建议。请结合自身情况咨询专业顾问。</p>
+  </div>
+</div>
+
+<div class="modal" id="modal-art6" role="dialog" aria-modal="true">
+  <div class="modal-header">
+    <h2 data-i18n="about.art6.t">LCGE 终身资本利得免税额，我能用上吗？</h2>
+    <button class="modal-close" onclick="closeModal()" aria-label="关闭">✕</button>
+  </div>
+  <div class="modal-body article-body">
+    <p class="article-lead">如果你拥有一家公司，将来卖掉股份时，可能有一笔<strong>上百万</strong>的“终身资本利得免税额”（LCGE）——但前提是你的公司“合格”。</p>
+
+    <h4>LCGE 是什么？</h4>
+    <p>出售“合格小企业公司股份（QSBC）”或合格农场 / 渔业资产时，每人可享有一笔终身资本利得免税额（2026 年起约 <strong>CAD $1.275M</strong>）。用好它，卖公司时这部分增值可以<strong>完全免税</strong>。</p>
+
+    <h4>怎样才算“合格”？（QSBC 三大测试，简化版）</h4>
+    <ul>
+      <li>公司是<strong>加拿大控股私人公司（CCPC）</strong>；</li>
+      <li>出售时，90% 以上资产用于在加拿大<strong>积极经营</strong>业务；</li>
+      <li>出售前 24 个月内，50% 以上资产持续用于积极经营，且股份由你或关联人持有。</li>
+    </ul>
+
+    <h4>常见“踩雷”点</h4>
+    <p>公司里囤积太多闲置现金 / 投资（被动资产），会让股份“不合格”——往往需要提前做“净化（Purification）”，而这些动作通常要在出售前 <strong>2 年</strong>就开始布局。</p>
+
+    <h4>能“倍增”吗？</h4>
+    <p>通过让配偶、子女（或家庭信托）合理持股，多个家庭成员可各自动用一份 LCGE，进一步放大免税额度。</p>
+
+    <p>一句话：LCGE 是企业主退出时最大的省税机会之一，但“合格”与“倍增”都需要提前 2 年以上规划。</p>
+
+    <p class="article-disclaimer">※ 本文仅作一般信息参考，不构成具体的税务、法律或投资建议。请结合自身情况咨询专业顾问。</p>
+  </div>
+</div>
+
+<div class="modal" id="modal-art7" role="dialog" aria-modal="true">
+  <div class="modal-header">
+    <h2 data-i18n="about.art7.t">每天一杯咖啡钱，给家人最大的保障</h2>
+    <button class="modal-close" onclick="closeModal()" aria-label="关闭">✕</button>
+  </div>
+  <div class="modal-body article-body">
+    <p class="article-lead">每天一杯咖啡的钱，可能就足以为家人撑起一张几十万的保障网——这就是定期寿险（Term Life）的魅力。</p>
+
+    <h4>什么是定期寿险？</h4>
+    <p>在你选定的期限内（如 10、20、30 年），若不幸身故，受益人将获得一笔<strong>免税</strong>赔偿金。它的特点是：<strong>保费低、保额高</strong>，专注做“纯保障”。</p>
+
+    <h4>为什么说“一杯咖啡钱”？</h4>
+    <ul>
+      <li>趁年轻、健康投保，保费可以非常低；</li>
+      <li>举例：30 多岁、健康的投保人，几十万的保额，每天可能只相当于一杯咖啡的花费；</li>
+      <li>用最少的钱，买到家庭最需要的那份安心。</li>
+    </ul>
+
+    <h4>这笔保障能做什么？</h4>
+    <p>一旦家庭经济支柱不在，赔付金可以：</p>
+    <ul>
+      <li>还清房贷、车贷，保住家庭的房子；</li>
+      <li>支付孩子的教育和成长费用；</li>
+      <li>覆盖几年的家庭日常开支，让家人有喘息和重新安排生活的时间。</li>
+    </ul>
+
+    <h4>谁最需要？</h4>
+    <ul>
+      <li>上有老下有小、收入是家庭主力；</li>
+      <li>背着房贷、车贷等长期负债；</li>
+      <li>预算有限，但想先把“万一”的风险兜住。</li>
+    </ul>
+
+    <h4>还有一个隐藏优势</h4>
+    <p>很多定期寿险可在一定年限内<strong>免体检转换</strong>为永久寿险——先用低保费锁定保障，将来需要时再升级，不必担心届时健康变化而无法投保。</p>
+
+    <p>一句话：定期寿险不是为自己买的，而是为了“万一我不在了，家人还能好好生活”而买的。</p>
+
+    <p class="article-disclaimer">※ 本文仅作一般信息参考，不构成具体的税务、法律或投资建议。请结合自身情况咨询专业顾问。</p>
+  </div>
+</div>
+
+<div class="modal" id="modal-art8" role="dialog" aria-modal="true">
+  <div class="modal-header">
+    <h2 data-i18n="about.art8.t">给子女买保险，还是 RESP？</h2>
+    <button class="modal-close" onclick="closeModal()" aria-label="关闭">✕</button>
+  </div>
+  <div class="modal-body article-body">
+    <p class="article-lead">“给孩子存钱，是买保险还是开 RESP？”这其实不是非此即彼——两者目标不同，搞清楚再决定，甚至可以兼顾。</p>
+
+    <h4>RESP：为“上学”而生</h4>
+    <ul>
+      <li>政府补贴 CESG：供款的 20%，每年最高 $500，终身最高 $7,200；</li>
+      <li>账户内投资免税增长；</li>
+      <li>孩子读大专 / 大学时提取，以孩子较低的税率计税。</li>
+      <li>局限：主要用于继续教育；若孩子不升学，补贴要退回、增长部分提取还可能被加税；供款终身上限 $50,000。</li>
+    </ul>
+
+    <h4>儿童保险（永久寿险）：为“人生”做准备</h4>
+    <ul>
+      <li>趁孩子年幼、健康，用极低保费锁定<strong>终身可保性</strong>（将来即使生病也有保障）；</li>
+      <li>保单现金价值免税增长，未来可灵活用作首付、创业、补充教育金；</li>
+      <li>用途不限于读书，也不受“必须升学”约束。</li>
+    </ul>
+
+    <h4>怎么选？</h4>
+    <p>不必二选一。常见做法是：<strong>先用 RESP 拿足政府补贴</strong>，再用儿童保险做一份灵活、长期的财富储备，两者互补。</p>
+
+    <p>一句话：RESP 管“上学”，保险管“人生”——能兼顾，孩子的底气最足。</p>
+
+    <p class="article-disclaimer">※ 本文仅作一般信息参考，不构成具体的税务、法律或投资建议。请结合自身情况咨询专业顾问。</p>
+  </div>
+</div>
+
+<div class="modal" id="modal-art9" role="dialog" aria-modal="true">
+  <div class="modal-header">
+    <h2 data-i18n="about.art9.t">多套房投资的税务隐患</h2>
+    <button class="modal-close" onclick="closeModal()" aria-label="关闭">✕</button>
+  </div>
+  <div class="modal-body article-body">
+    <p class="article-lead">华人家庭爱以房产置业、投资，但“多套房”背后藏着不少容易被忽略的税务隐患。往往卖之前才发现，已经晚了。</p>
+
+    <h4>1. 自住房免税，只有一套</h4>
+    <p>“自住房资本利得豁免（PRE）”每个家庭每年只能指定<strong>一套</strong>房产享受免税。第二套、第三套出售时，增值部分要缴资本利得税。</p>
+
+    <h4>2. 出租房：资本利得 + 折旧回收</h4>
+    <ul>
+      <li>出售出租房时，增值的一部分要计入<strong>应税收入</strong>；</li>
+      <li>若你过去申报过房屋折旧（CCA），出售时还要做“折旧回收（Recapture）”，把之前抵扣的折旧补回来计税。</li>
+    </ul>
+
+    <h4>3. 频繁买卖可能被当成“生意”</h4>
+    <ul>
+      <li>短期买卖、装修转手（flipping）可能被 CRA 认定为<strong>经营收入</strong>，100% 计税，还可能涉及 GST/HST；</li>
+      <li>自 2023 年起的“反炒房规则”：持有不足 12 个月就出售的住宅，通常直接按营业收入征税（搬迁、离婚等特殊情形可豁免）。</li>
+    </ul>
+
+    <h4>4. 传承时的“视同出售”</h4>
+    <p>人离世时，名下房产被视同按市价处分，多套房可能一次性触发大笔资本利得税，给继承人带来现金压力。</p>
+
+    <h4>5. 海外房产也要申报</h4>
+    <p>持有成本超过 CAD $100,000 的海外房产，每年需申报 T1135；将来出售同样涉及加拿大税。</p>
+
+    <h4>几点建议</h4>
+    <ul>
+      <li>买入前就规划<strong>持有结构</strong>（个人 / 公司 / 信托）；</li>
+      <li>保留装修与持有成本凭证；</li>
+      <li>合理安排自住房的指定年份；</li>
+      <li>提前为传承可能产生的税款准备流动性（如人寿保险）。</li>
+    </ul>
+
+    <p>一句话：多套房的税，往往不在“买”时，而在“卖”和“传”时——提前规划才省心。</p>
+
+    <p class="article-disclaimer">※ 本文仅作一般信息参考，不构成具体的税务、法律或投资建议。请结合自身情况咨询专业顾问。</p>
+  </div>
+</div>
+
+<script src="scripts.js?v=6"></script>
+</body>
+</html>
