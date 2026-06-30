@@ -179,7 +179,7 @@ const T = {
 
     // ── Life ──
     'life.h2':  '🛡️ 寿险 & 重疾险',
-    'life.sub': '代理多家顶级保险公司，为您和家人，为企业主构建长期财务安全网。',
+    'life.sub': '全面代理 Sun Life、Manulife、Canada Life、IA、Equitable Life、BMO Insurance、Foresters 等多家保险公司，为您和家人，为企业主构建长期财务安全网。',
 
     'life.term.h3':  '定期寿险（Term Life Insurance）',
     'life.term.p':   '若投保人指定期限内身故，受益人获得免税赔偿金。',
@@ -562,7 +562,7 @@ const T = {
     'sfaq.a4':  'A full refund is available before the coverage start date. Refund policies after coverage begins vary — please contact your advisor for details.',
 
     'life.h2':  '🛡️ Life Insurance & Critical Illness',
-    'life.sub': 'Partnering with top-rated insurers to build a long-term financial safety net for individuals, families, and business owners.',
+    'life.sub': 'A full-service broker for Sun Life, Manulife, Canada Life, IA, Equitable Life, BMO Insurance, Foresters and more — building a long-term financial safety net for you, your family, and business owners.',
 
     'life.term.h3':  'Term Insurance',
     'life.term.p':   'Provides a tax-free death benefit to your beneficiaries if you pass away within a specified term (10, 20, or 30 years).',
