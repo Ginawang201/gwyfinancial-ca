@@ -51,9 +51,9 @@ const T = {
     'about.art8.tag':     '子女规划',
     'about.art8.t':       '给子女买保险，还是 RESP？',
     'about.art8.p':       '政府补贴 vs 灵活终身——两个工具目标不同，其实可以兼顾。',
-    'about.art9.tag':     '房产税务',
-    'about.art9.t':       '多套房投资的税务隐患',
-    'about.art9.p':       '自住房免税只有一套、折旧回收、反炒房规则……多套房别忽视这些税。',
+    'about.art9.tag':     '资产传承',
+    'about.art9.t':       '人生的最后一张税单',
+    'about.art9.p':       '加拿大没有遗产税，但很多人这辈子最大的一张税单，恰恰落在身故那一年。',
 
     // hero
     'hero.tag':  '安省 & BC省持牌顾问 | Licensed in Ontario & British Columbia',
@@ -440,9 +440,9 @@ const T = {
     'about.art8.tag':     'Kids',
     'about.art8.t':       'Insurance or RESP for Your Child?',
     'about.art8.p':       'Government grants vs lifelong flexibility — two different tools you can actually combine.',
-    'about.art9.tag':     'Real Estate',
-    'about.art9.t':       'Tax Traps of Owning Multiple Properties',
-    'about.art9.p':       'One principal-residence exemption, CCA recapture, anti-flipping rules — don\'t overlook these.',
+    'about.art9.tag':     'Wealth Transfer',
+    'about.art9.t':       'The Last Tax Bill of Your Life',
+    'about.art9.p':       'Canada has no estate tax — yet your biggest tax bill may land the year you pass away.',
 
     'hero.tag':  'Licensed in Ontario & British Columbia | 安省 & BC省持牌顾问',
     'hero.h1':   'Travel with Confidence',
