@@ -59,6 +59,8 @@ const T = {
     'hero.tag':  '安省 & BC省持牌顾问 | Licensed in Ontario & British Columbia',
     'hero.h1':   '出行在外，保障先行',
     'hero.sub':  '无论海外旅行，留学陪读，还是家庭保障，我们都为您备好一份安心。',
+    'hero.agency': '全面代理 GMS、Allianz、Manulife、Tugo、JF 等公司产品，为您提供最优价格和服务。',
+    'hero.qr':   '请扫码咨询',
 
     'hero.btn1': '查询旅游保险报价',
     'hero.btn2': '留学生 & 陪读保险',
@@ -445,6 +447,8 @@ const T = {
     'hero.tag':  'Licensed in Ontario & British Columbia | 安省 & BC省持牌顾问',
     'hero.h1':   'Travel with Confidence',
     'hero.sub':  'Whether you\'re travelling abroad, supporting a student, or planning your family\'s future — we\'ve got you covered.',
+    'hero.agency': 'A full-service broker for GMS, Allianz, JF, Manulife, Tugo and more — bringing you the best price and service.',
+    'hero.qr':   'Scan the QR code to get in touch',
     'hero.btn1': 'Get a Travel Quote',
     'hero.btn2': 'Student & Accompanying Parents Insurance',
 

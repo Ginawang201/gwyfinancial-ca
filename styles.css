@@ -109,6 +109,19 @@ a.btn, a.btn:visited, a.btn:active, a.btn:focus { outline: none; box-shadow: non
   white-space: nowrap;
 }
 .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.hero-agency {
+  font-size: clamp(13px, 1.6vw, 16px); color: var(--navy); font-weight: 600;
+  margin: 10px auto 14px; max-width: 700px; line-height: 1.7;
+}
+.hero-qr-cta {
+  display: inline-flex; flex-direction: column; align-items: center; gap: 6px;
+  margin-bottom: 14px;
+}
+.hero-qr-img {
+  width: 120px; height: 120px; border-radius: 10px; display: block;
+  border: 1px solid var(--cream-dark); background: var(--white); padding: 4px;
+}
+.hero-qr-text { font-size: 13px; color: var(--text-mid); font-weight: 600; }
 
 /* ========== COMPLIANCE BANNER ========== */
 .compliance-banner {
